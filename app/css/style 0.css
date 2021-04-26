@@ -1,0 +1,523 @@
+body {
+    background-image: url("../images/background.png");
+    background-size: 100%;
+    overflow: scroll;
+    height: 1300px;
+
+}
+
+#left_part {
+    width: 22%;
+    float: left;
+    height: 100%;
+
+}
+
+#person {
+    background-color: #1c3443;
+    height: 130px;
+    width: 105%;
+    position: relative;
+    top: 53px;
+    left: -7px;
+    padding-top: 20px;
+
+}
+#avatar {
+    top: 20px;
+    margin: 15px;
+    float: left;
+    vertical-align: middle;
+}
+
+#Name {
+    color: whitesmoke;
+    margin: 16px;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    font-family: "Bodoni 72 Oldstyle";
+    font-size: 19px;
+    position: relative;
+    top: 10px;
+
+
+}
+
+#student {
+    color: whitesmoke;
+    margin: 5px;
+    font-family: "Shree Devanagari 714";
+    font-size: 13px;
+    margin-left: 100px;
+    position: relative;
+    top: 10px;
+}
+
+#b1 {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#b2 {
+    margin-right: 10px;
+    outline: none;
+}
+
+#general {
+    color: #b7d2e6;
+    font-family: 'Courier New';
+    position: relative;
+    top: 54px;
+    left: 20px;
+    font-size: 22px;
+    float: bottom;
+    height: 50px;
+    background-color: #283f4d;
+    width: 100px;
+    padding: 20px;
+
+}
+
+#elements {
+    float: top;
+    color: #b7d2e6;
+    font-family: "Courier New";
+    position: relative;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: #283f4d;
+    width: 103%;
+    left: -20px;
+
+}
+#dashboard {
+    float: left;
+    position: relative;
+    top: 30px;
+    overflow: hidden;
+    padding-left: 20px;
+    width: 100%;
+    left: -10px;
+}
+#dashboard1 {
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    left: -7%;
+    transition: transform 5s ease;
+    width: 100%;
+    position: relative;
+    margin-right: 60px;
+    background-color: #283f4d;
+    float: top;
+
+
+}
+
+#dashboard2 {
+
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    left: -7%;
+    transition: transform 5s ease;
+    width: 100%;
+    position: relative;
+    margin-right: 60px;
+    background-color: #283f4d;
+    float: top;
+
+}
+
+#dashboard3 {
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 20px;
+    left: -7%;
+    transition: transform 5s ease;
+    width: 100%;
+    position: relative;
+    margin-right: 60px;
+    background-color: #283f4d;
+}
+.dashtext {
+    color: whitesmoke;
+    top: 10px;
+    font-family: "Avenir Next";
+    margin-left: 15px;
+    margin-right: 130px;
+    font-size: 17px;
+    padding-top: 10px;
+
+
+}
+
+#hidden1 {
+    transition: transform 5s ease;
+    color: whitesmoke;
+    font-family: "Avenir Next";
+    background-color: #1c3443;
+    padding-bottom: 25px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 60px;
+    width: 110%;
+    left: -16px;
+    position: relative;
+    float: none;
+    font-size: 17px;
+    height: auto;
+
+}
+
+.button_rotate {
+    transition: transform 2s ease;
+    outline: none;
+    float: right;
+    padding-right: 12px;
+}
+
+.disk {
+    margin-top: 15px;
+
+}
+
+
+.L-ts {
+    vertical-align: middle;
+    horiz-align: center;
+}
+
+#hidden2 {
+
+}
+
+.list {
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 20px;
+    left: -7%;
+    transition: transform 5s ease;
+    width: 100%;
+    position: relative;
+    margin-right: 60px;
+    background-color: #283f4d;
+    float: top;
+}
+
+#charts {
+    position: absolute;
+    left: -15px;
+    width: 100%;
+}
+
+#bottom_frame {
+    margin-top: 7px;
+}
+
+#bell {
+    position: relative;
+    left: 84px;
+    top: 5px;
+}
+
+#mailslot {
+    position: relative;
+    left: 101px;
+    top: 5px;
+}
+
+#somebottom {
+    position: relative;
+    left: 135px;
+    top: 5px;
+}
+
+#search {
+    position: relative;
+    left: 300px;
+    top: -30px;
+}
+
+#avatar2 {
+    position: relative;
+    right: 100px;
+    float: right;
+    border: 5px;
+    top: -95px;
+}
+
+#name2 {
+    position: relative;
+    float: right;
+    right: 20px;
+    top: -85px;
+    color: #666666;
+    font-family: "Bodoni 72 Oldstyle";
+}
+
+#down_arrow {
+    float: right;
+    position: relative;
+    top: -83px;
+    right: -50px;
+    
+}
+
+#Serch {
+    padding: 15px;
+    left: -300px;
+    position: relative;
+    width: 300px;
+    outline: none;
+    border: none;
+    top: 10px ;
+
+}
+
+#form {
+
+    width: 650px;
+    height: 60px;
+    left: 587px;
+    position: relative;
+    top: -46px;
+
+}
+
+#dialog {
+    width: 300px;
+    font-family: "Avenir Next";
+}
+
+#select {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    color: #666666;
+    font-family: "Avenir Next";
+    float: right;
+}
+
+#Rep_per {
+    position: relative;
+    font-family: "Avenir Next";
+    top: 5px;
+
+}
+
+#form2 {
+    position: relative;
+    right: -85px;
+    width: 260px;
+    float: right;
+    align-content: center;
+    color: #515151;
+}
+
+#way {
+    position: relative;
+    color: #515151;
+    font-family: "Avenir Next";
+    left: 40px;
+}
+
+#visitors {
+    background-image: url("../images/visitors.png");
+    position: absolute;
+    left: 354px;
+    top: 147px;
+    width: 236px;
+    height: 98px;
+    z-index: 2;
+    text-align: center;
+    color: #666666;
+    font-family: "Avenir Next";
+    padding-top: 83px;
+    padding-left: 5px;
+
+}
+
+#new_order {
+                background-image: url("../images/New_order.png");
+                position: absolute;
+                left: 626px;
+                top: 147px;
+                width: 236px;
+                height: 98px;
+                z-index: 2;
+                text-align: center;
+                color: #666666;
+                font-family: "Avenir Next";
+                padding-top: 83px;
+                padding-left: 5px;
+
+}
+
+#sales {
+    background-image: url("../images/sales.png");
+    position: absolute;
+    left: 900px;
+    top: 147px;
+    width: 236px;
+    height: 98px;
+    z-index: 2;
+    text-align: center;
+    color: #666666;
+    font-family: "Avenir Next";
+    padding-top: 83px;
+    padding-left: 5px;
+}
+
+#shipping {
+    background-image: url("../images/shipping.png");
+    position: absolute;
+    left: 1173px;
+    top: 146px;
+    width: 242px;
+    height: 105px;
+    z-index: 2;
+    text-align: center;
+    color: #666666;
+    font-family: "Avenir Next";
+    padding-top: 83px;
+    padding-left: 5px;
+}
+
+#graphic {
+    background-image: url("../images/Graphic.png");
+    background-size: 100%;
+    width: 1062px;
+    height: 490px;
+    color: #666666;
+    font-family: "Avenir Next";
+    font-size: 13px;
+    position: relative;
+    left: 345px;
+    top: 220px;
+}
+
+#Earn {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: -270px;
+}
+
+.ct-chart {
+    position: relative;
+    top: 30px;
+}
+
+#gr1 {
+    position: relative;
+    top: 40px;
+
+}
+
+
+.ct-series-a .ct-area {
+
+    fill: #00c5e1 !important;
+    fill-opacity: 100% ;
+
+}
+
+.ct-series-b .ct-area {
+    fill: #0076ef !important;
+    fill-opacity: 100%;
+
+}
+
+.ct-series-c .ct-area {
+    fill: #ffa900 !important;
+    fill-opacity: 100%;
+
+}
+
+.ct-series-d .ct-area {
+    fill: #59c970 !important;
+    fill-opacity: 100%;
+
+}
+
+#reload {
+    z-index: 1;
+    position: relative;
+    top: -348px;
+    left: 450px;
+    outline: none;
+}
+
+#Geo {
+    position: relative;
+    top: 240px;
+    margin-left: 33px;
+    background-image: url("../images/Geo.png");
+    width: 695px;
+    background-size: 100%, 100%;
+    height: 439px;
+    float: left;
+}
+
+#regions_div {
+    position: relative;
+    top: 60px;
+    left: 10px;
+
+}
+
+#traffic {
+    background-image: url("../images/Traffic.png");
+    width: 350px;
+    background-size: 100%;
+    height: 340px;
+    float: right;
+    top: 239px;
+    position: relative;
+    text-align: center;
+    padding-top: 90px;
+
+}
+
+.numbers {
+    color: #666666;
+    font-family: "Avenir Next";
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 30px;
+
+   
+}
+
+#Direct {
+    position: relative;
+    margin-bottom: 40%;
+}
+
+#Refer {
+    top: 50px;
+}
+
+#Social {
+    top: 100px;
+}
+
+#Srch {
+    top: 90px;
+}
+
+#Internal {
+    top: 85px;
+}
+
+#Site_visits {
+    background-image: url("../images/Site_visits.png");
+}
