@@ -1,12 +1,12 @@
 
 //функція для зміни імені
 
-var counter = 5;
+let counter = 5;
 
-function changeN () {
-    var element = document.getElementById('Name');
+function changeN() {
+    let element = document.getElementById('Name');
     element.innerHTML = prompt("Ви бажаєте змінити ім'я, введіть нове", "Name");
-    var fail = false;
+    let fail = false;
     if (element.innerHTML == "" || element.innerHTML == "Name" || element.innerHTML == " " ) { //Перевірка вводу
         fail = "Ви не ввели своє ім'я";
         alert(fail);
@@ -22,15 +22,16 @@ function changeN () {
     });
 });*/
 
-var bool = true;
+let bool = true;
+
 function changes (number) {  //Вікриває приховану інформацію
 
     $(document).ready(function(){ //відкривання схованого вікнв
             $("#hidden"+ number).toggle(1000);
     });
 
-    var element = document.getElementById('dashboard'+ number);
-    var el1 = document.getElementById('button_rotate'+ number);
+    let element = document.getElementById('dashboard' + number);
+    let el1 = document.getElementById('button_rotate' + number);
 
 
     bool = !bool;
@@ -65,8 +66,8 @@ function open() {
 
 function srch() {  //Фцнкція для пошукової форми
 
-    var search = document.getElementById("Serch");
-    var res = search.value;
+    let search = document.getElementById("Serch");
+    let res = search.value;
     window.bbb = true;
 
     $(function () {
@@ -93,43 +94,64 @@ function srch() {  //Фцнкція для пошукової форми
     setTimeout(function(){location.href="http://google.com/search?q="+res} , 5000);
 }
 
-function graphic() { //Перевірка чи працює форма вибору
-    alert("It works");
+
+
+
+
+
+var sel = $("select");
+
+    sel.change(function() {
+        let arr = [125, 28, 25, 12, 1200, 1150, 980, 720, 600];
+        var str = "";
+        alert(str);
+        $( "select option:selected" ).each(function() {
+            str += $( this ).text();
+        });
+        alert(str);
+        let num_arr = $('span.numbers');
+        switch (str) {
+            case "Last 90 Day's":
+                alert("info for season");
+                for (let i = 0; i < 9; i++) {
+                    $(num_arr.get(i)).html(arr[i] * 3);
+                }
+                break;}
+
+    })
+sel.trigger( "change" );
+
+
+function getajax(text) {
+    $.ajax({
+        type:'GET',
+        url: "data.json",
+        dataType:'json',
+        success:function(data) {
+
+            console.log(data);
+            $.each(data, function(text) {
+                let num_arr = $('span.numbers');
+                for (let i = 0; i < 9; i++) $(num_arr.get(i)).html(data["month_inf[i]"]);
+            })   },
+
+        error:function(){
+            alert('error')
+        }
+    });
 }
 
- new Chartist.Line('.ct-chart ct-golden-section', {
-    labels: [1, 2, 3, 4, 5, 6, 7, 8],
-    series: [
-        [1, 2, 3, 1, -2, 0, 1, 0],
-        [-2, -1, -2, -1, -2.5, -1, -2, -1],
-        [0, 0, 0, 1, 2, 2.5, 2, 1],
-        [2.5, 2, 1, 0.5, 1, 0.5, -1, -2.5]
-    ],
-     datasets: [{
-        fillColor: blue,
-     }]
-}, {
-    high: 3,
-    low: -3,
-    showArea: true,
-    showLine: false,
-    showPoint: false,
-    fullWidth: true,
-    axisX: {
-        showLabel: false,
-        showGrid: false
-    }
-});
+/*{
 
-new Chartist.Line('.ct-chart ct-golden-section', {
-    labels: ['День 1', 'День 2', 'День 3', 'День 4', 'День 5'],
-    series: [
-        [12, 9, 3, 8, 4],
-        [2, 1, 4.7, 5.5, 8]
-    ]
-}, {
-    fullWidth: true,
-    chartPadding: {
-        right: 50
+    let arr = [125, 28, 25, 12, 1200, 1150, 980, 720, 600];
+    let time = $('option[name="time"]:selected').val();
+    let num_arr = $('span.numbers');
+    switch (time) {
+        case 'season':
+            alert("info for season");
+            for (let i = 0; i < 9; i++) {
+                $(num_arr.get(i)).html(arr[i] * 3);
+            }
+            break;
     }
-});
+}*/
